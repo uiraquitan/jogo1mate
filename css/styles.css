@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.bg-1 {
+    background-color: rgb(221, 191, 191);
+}
+
+.bg-accept {
+    border: 1px solid rgb(60, 211, 80);
+    background-color: rgb(162, 241, 159);
+    text-align: center;
+}
+
+.bg-error {
+    border: 1px solid rgb(211, 60, 60);
+    background-color: rgb(241, 133, 133);
+    text-align: center;
+}
+
+.bg-danger {
+    border: 1px solid rgb(148, 140, 37);
+    background-color: rgb(233, 220, 149);
+    text-align: center;
+}
+
+.bg-selected {
+    border: 1px solid rgb(30, 60, 231);
+    background-color: rgb(147, 155, 231);
+    text-align: center;
+}
+
+.bg-quiz {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+main {
+    border: 1px solid #ccc;
+    max-width: 300px;
+    margin: 0 auto;
+    display: grid;
+    box-sizing: border-box;
+}
+
+main h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 span {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+main .msg {
+    display: flex;
+    margin: 5px;
+}
+
+main .msg span {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+main form {
+    padding: 15px 5px;
+
+}
+
+.formulas {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.formulas div {
+
+    padding: 7px 12px;
+    text-align: center;
+}
+
+.formulas label {
+    font-size: 0.9em;
+}
+
+.numeros {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 10px 0;
+}
+
+.numero label {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.numero input {
+    display: block;
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.visor {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 7px 0;
+    padding: 5px;
+    gap: 5px;
+}
+
+.visor span {
+    text-align: center;
+
+    padding: 7px;
+}
+
+.numeroReal {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.numeroReal input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.botoes button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemátca</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="main_header">
+            <h1>Quiz de matemática <span>3 </span>x </h1>
+            <p class="msg"></p>
+        </div>
+
+        <form action="" method="post" data-form class="formulario">
+            <div class="formulas">
+                <div class="bg-quiz">
+                    <input type="radio" id="somar" name="formula" onchange="selecionar('+')">
+                    <label for="somar">Somar</label>
+                </div>
+                <div class="bg-quiz">
+                    <input type="radio" id="subtrair" checked="checked" name="formula" value="-"
+                        onchange="selecionar('-')">
+                    <label for="subtrair">Subtrair</label>
+                </div>
+                <div class="bg-quiz">
+                    <input type="radio" id="multiplicar" name="formula" value="*" onchange="selecionar('*')">
+                    <label for="multiplicar">Multiplicar</label>
+                </div>
+                <div class="bg-quiz">
+                    <input type="radio" id="dividir" name="formula" value="/" onchange="selecionar('/')">
+                    <label for="dividir">Dividir</label>
+                </div>
+            </div>
+            <!-- <div class="numeros">
+                <div class="numero">
+                    <label for="numeroUm">Número aleatóriamente 1</label>
+                    <input type="number" id="numeroUm"  name="numeroUm">
+                </div>
+                <div class="numero">
+                    <label for="numeroDois">Número aleatóriamente 2</label>
+                    <input type="number" id="numeroDois"  name="numeroDois">
+                </div>
+            </div> -->
+            <div class="visor">
+                <span class="numeroVisorUm bg-1 ">0</span>
+                <span class="operador bg-1 ">-</span>
+                <span class="numeroVisorDois bg-1 ">0</span>
+                <span class="bg-1 ">=</span>
+                <span class="numeroVisorResult" data-mostrarResult="">0</span>
+            </div>
+            <div class="numeroReal">
+                <input type="number" id="numeroReal" data-numeroreal="" name="numeroReal">
+                <button name="btnChecar" class="btnChecar" type="submit">Chutar</button>
+            </div>
+            <div class="botoes">
+                <button name="btnShow" class="btnShow" type="submit">Mostrar resultado</button>
+                <button name="trocar" class="trocar" type="submit">Gerar Número</button>
+            </div>
+        </form>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
